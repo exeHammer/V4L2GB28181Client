@@ -1,0 +1,19 @@
+Performing C++ SOURCE FILE Test HAVE_MYSQL_OPT_EMBEDDED_CONNECTION failed with the following output:
+Change Dir: /home/ares/V4L2GB28181Client/3rdpart/ZLToolKit/linux_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e9507/fast && /usr/bin/make -f CMakeFiles/cmTC_e9507.dir/build.make CMakeFiles/cmTC_e9507.dir/build
+make[1]: 进入目录“/home/ares/V4L2GB28181Client/3rdpart/ZLToolKit/linux_build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_e9507.dir/src.cxx.o
+/usr/bin/c++    -DHAVE_MYSQL_OPT_EMBEDDED_CONNECTION   -o CMakeFiles/cmTC_e9507.dir/src.cxx.o -c /home/ares/V4L2GB28181Client/3rdpart/ZLToolKit/linux_build/CMakeFiles/CMakeTmp/src.cxx
+/home/ares/V4L2GB28181Client/3rdpart/ZLToolKit/linux_build/CMakeFiles/CMakeTmp/src.cxx:1:10: fatal error: mysql.h: 没有那个文件或目录
+    1 | #include <mysql.h>
+      |          ^~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_e9507.dir/build.make:66：CMakeFiles/cmTC_e9507.dir/src.cxx.o] 错误 1
+make[1]: 离开目录“/home/ares/V4L2GB28181Client/3rdpart/ZLToolKit/linux_build/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_e9507/fast] 错误 2
+
+
+Source file was:
+#include <mysql.h>
+int main() { int i = MYSQL_OPT_USE_EMBEDDED_CONNECTION; }
